@@ -344,7 +344,7 @@ verify_ansible_hosts() {
             _log "ERROR(${FUNCNAME[0]})" "The ingress load balancer IP '${BOOTSTRAP_METALLB_INGRESS_ADDR}' should not be the same as the IP for node '${!node_addr}'"
             exit 1
         fi
-        if ssh -q -o BatchMode=yes -o ConnectTimeout=5 "${!node_username}"@"${!var}" "true"; then
+        if ssh -i ~/.ssh/proxmox/pve1_local_ansible -q -o BatchMode=yes -o ConnectTimeout=5 "${!node_username}"@"${!var}" "true"; then
             _log "INFO(${FUNCNAME[0]})" "SSH into host '${!var}' with username '${!node_username}' was successfull"
         else
             _log "ERROR(${FUNCNAME[0]})" "SSH into host '${!var}' with username '${!node_username}'was NOT successful, did you copy over your SSH key?"
