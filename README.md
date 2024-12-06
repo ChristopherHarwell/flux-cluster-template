@@ -154,7 +154,6 @@ In order to use Terraform and `cert-manager` with the Cloudflare DNS challenge y
 3. Use the API Key in the appropriate variable in configuration section below.
 
 📍 You may wish to update this later on to a Cloudflare **API Token** which can be scoped to certain resources. I do not recommend using a Cloudflare **API Key**, however for the purposes of this template it is easier getting started without having to define which scopes and resources are needed. For more information see the [Cloudflare docs on API Keys and Tokens](https://developers.cloudflare.com/api/).
-
 ### 📄 Configuration
 
 📍 The `.config.env` file contains necessary configuration that is needed by Ansible, Terraform and Flux.
@@ -187,7 +186,7 @@ In order to use Terraform and `cert-manager` with the Cloudflare DNS challenge y
 
 1. Ensure you are able to SSH into your nodes from your workstation using a private SSH key **without a passphrase**. This is how Ansible is able to connect to your remote nodes.
 
-   [How to configure SSH key-based authentication](https://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
+   [How to configure SSH key-based authentication](ihttps://www.digitalocean.com/community/tutorials/how-to-configure-ssh-key-based-authentication-on-a-linux-server)
 
 2. Install the Ansible deps
 
