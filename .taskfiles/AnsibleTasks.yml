@@ -15,13 +15,9 @@ tasks:
     desc: Install / Upgrade Ansible galaxy deps
     dir: "{{.ANSIBLE_DIR}}"
     cmds:
-      - python3 -m venv ansible_venv
-      - source ansible_venv/bin/activate
-      - pip install --upgrade pip
-      - pip install --requirement requirements.txt
+      - pip3 install --user --requirement requirements.txt
       - ansible-galaxy install -r requirements.yml --roles-path ~/.ansible/roles --force
       - ansible-galaxy collection install -r requirements.yml --collections-path ~/.ansible/collections --force
-      - deactivate
 
   list:
     desc: List all the hosts
