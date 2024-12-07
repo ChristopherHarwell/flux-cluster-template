@@ -9,17 +9,17 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/Users/guest1/iCloud Drive (Archive) - 2/Documents/1_Projects/temp/flux-cluster-template/ansible/ansible_venv"
+setenv VIRTUAL_ENV "/Users/guest1/Documents/flux-cluster-template/ansible/ansible_venv"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
+setenv VIRTUAL_ENV_PROMPT "ansible_venv"
 
 
 set _OLD_VIRTUAL_PROMPT="$prompt"
 
 if (! "$?VIRTUAL_ENV_DISABLE_PROMPT") then
     set prompt = "(ansible_venv) $prompt"
-    setenv VIRTUAL_ENV_PROMPT "(ansible_venv) "
 endif
 
 alias pydoc python -m pydoc

@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/guest1/iCloud Drive (Archive) - 2/Documents/1_Projects/temp/flux-cluster-template/ansible/ansible_venv/bin/python3.12" "$0" "$@"
-' '''
+#!/Users/guest1/Documents/flux-cluster-template/ansible/ansible_venv/bin/python3.13
 # -*- coding: utf-8 -*-
 import re
 import sys
